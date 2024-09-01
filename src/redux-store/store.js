@@ -1,4 +1,5 @@
-const { createStore } = require("redux");
+// const { createStore } = require("redux");
+import { createStore } from "redux";
 
 const initialState = { counter: 0 };
 
@@ -21,15 +22,4 @@ const store = createStore(reducer);
 
 store.subscribe(() => console.log(store.getState()));
 
-store.dispatch({
-  type: "INCREMENT",
-});
-store.dispatch({
-  type: "INCREMENT",
-});
-store.dispatch({
-  type: "INCREMENT",
-});
-store.dispatch({
-  type: "DECREMENT",
-});
+export default store;
